@@ -1,4 +1,3 @@
-@echo off
 for /f "skip=9 tokens=1,* delims=:" %%a in ('netsh wlan show profile') do (
     if not "%%b"=="" (
         for /f "tokens=*" %%c in ("%%b") do (
