@@ -9,7 +9,7 @@ for /f "skip=9 tokens=1,* delims=:" %%a in ('netsh wlan show profile') do (
         )
     )
 )
-powershell
+powershell 
 $FileName = "$env:TMP/ResultadoFinal.txt"
 
 > $FileName
